@@ -1,66 +1,40 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+'use client';
+
+import Head from 'next/head';
+import ChatWidget from '../components/ChatWidget';
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>To get started, edit the page.tsx file.</h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <div style={{ fontFamily: 'sans-serif', lineHeight: 1.6 }}>
+      {/* Background/Demo Content */}
+      <main style={{ maxWidth: '800px', margin: '0 auto', padding: '40px 20px' }}>
+        <h1 style={{ fontSize: '2.5rem', marginBottom: '1rem', color: '#111' }}>
+          Welcome to Antigravity
+        </h1>
+        <p style={{ fontSize: '1.2rem', color: '#555', marginBottom: '2rem' }}>
+          We build amazing digital products. Scroll down to see more!
+        </p>
+
+        <div style={{
+          height: '300px',
+          background: 'linear-gradient(to right, #f8f9fa, #e9ecef)',
+          borderRadius: '12px',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          color: '#888',
+          marginBottom: '2rem'
+        }}>
+          Placeholder Content Area
         </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+
+        <p>
+          Need help? Click the chat icon in the bottom right corner to talk to our assistant!
+        </p>
       </main>
+
+      {/* The Chat Widget */}
+      <ChatWidget />
     </div>
   );
 }

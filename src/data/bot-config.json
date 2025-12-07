@@ -1,0 +1,54 @@
+{
+    "botName": "Antigravity Assistant",
+    "welcomeMessage": "Hi there! 👋 How can I help you today?",
+    "fallbackMessage": "I'm not sure about that. Try one of the suggestions below!",
+    "keywords": {
+        "portfolio": {
+            "text": "Check out our portfolio here!",
+            "link": "https://example.com/portfolio",
+            "linkText": "View Portfolio"
+        },
+        "apps": {
+            "text": "Here are some amazing apps built with Antigravity.",
+            "link": "https://example.com/apps",
+            "linkText": "Browse Apps"
+        },
+        "price": {
+            "text": "Our pricing depends on your needs. Standard packages start at $500/month.",
+            "link": "",
+            "linkText": ""
+        },
+        "contact": {
+            "text": "You can reach us anytime.",
+            "link": "https://example.com/contact",
+            "linkText": "Contact Us"
+        },
+        "collaboration": {
+            "text": "We love collaborating! Let's build something great together.",
+            "link": "mailto:collab@example.com",
+            "linkText": "Email Us"
+        }
+    },
+    "suggestions": [
+        {
+            "label": "Portfolio",
+            "keyword": "portfolio"
+        },
+        {
+            "label": "Apps List",
+            "keyword": "apps"
+        },
+        {
+            "label": "Pricing",
+            "keyword": "price"
+        },
+        {
+            "label": "Contact",
+            "keyword": "contact"
+        },
+        {
+            "label": "Collaboration",
+            "keyword": "collaboration"
+        }
+    ]
+}
